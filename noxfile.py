@@ -163,7 +163,7 @@ def flake8(session: PowerSession):
     rm_file(Folders.flake8_intermediate_file)
 
 
-@power_session(python=[PY37])
+@power_session(python=[PY38])
 def docs(session: PowerSession):
     """Generates the doc and serves it on a local http server. Pass '-- build' to build statically instead."""
 
@@ -178,7 +178,7 @@ def docs(session: PowerSession):
         session.run2("mkdocs serve")
 
 
-@power_session(python=[PY37])
+@power_session(python=[PY38])
 def publish(session: PowerSession):
     """Deploy the docs+reports on github pages. Note: this rebuilds the docs"""
 
@@ -205,7 +205,7 @@ def publish(session: PowerSession):
     # session.run2('codecov -t %s -f %s' % (codecov_token, Folders.coverage_xml))
 
 
-@power_session(python=[PY37])
+@power_session(python=[PY38])
 def release(session: PowerSession):
     """Create a release on github corresponding to the latest tag"""
 
