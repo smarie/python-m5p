@@ -138,7 +138,7 @@ jobs:
           cat << EOF > codecov.yml
           # codecov.yml
           fixes:
-            - "/home/runner/work/smarie/python-m5py/::" # Correct paths
+            - "/home/runner/work/smarie/python-m5p/::" # Correct paths
           EOF
       - name: \[not on TAG\] Publish coverage report
         if: github.event_name == 'push' && startsWith(github.ref, 'refs/heads')

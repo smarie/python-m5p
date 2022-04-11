@@ -2,17 +2,17 @@
 
 *`scikit-learn`-compliant M5 and Model trees for python*
 
-[![Python versions](https://img.shields.io/pypi/pyversions/m5py.svg)](https://pypi.python.org/pypi/m5py/) [![Build Status](https://github.com/smarie/python-m5py/actions/workflows/base.yml/badge.svg)](https://github.com/smarie/python-m5py/actions/workflows/base.yml) [![Tests Status](./reports/junit/junit-badge.svg?dummy=8484744)](./reports/junit/report.html) [![Coverage Status](./reports/coverage/coverage-badge.svg?dummy=8484744)](./reports/coverage/index.html) [![codecov](https://codecov.io/gh/smarie/python-m5py/branch/main/graph/badge.svg)](https://codecov.io/gh/smarie/python-m5py) [![Flake8 Status](./reports/flake8/flake8-badge.svg?dummy=8484744)](./reports/flake8/index.html)
+[![Python versions](https://img.shields.io/pypi/pyversions/m5py.svg)](https://pypi.python.org/pypi/m5py/) [![Build Status](https://github.com/smarie/python-m5p/actions/workflows/base.yml/badge.svg)](https://github.com/smarie/python-m5p/actions/workflows/base.yml) [![Tests Status](./reports/junit/junit-badge.svg?dummy=8484744)](./reports/junit/report.html) [![Coverage Status](./reports/coverage/coverage-badge.svg?dummy=8484744)](./reports/coverage/index.html) [![codecov](https://codecov.io/gh/smarie/python-m5p/branch/main/graph/badge.svg)](https://codecov.io/gh/smarie/python-m5p) [![Flake8 Status](./reports/flake8/flake8-badge.svg?dummy=8484744)](./reports/flake8/index.html)
 
-[![Documentation](https://img.shields.io/badge/doc-latest-blue.svg)](https://smarie.github.io/python-m5py/) [![PyPI](https://img.shields.io/pypi/v/m5py.svg)](https://pypi.python.org/pypi/m5py/) [![Downloads](https://pepy.tech/badge/m5py)](https://pepy.tech/project/m5py) [![Downloads per week](https://pepy.tech/badge/m5py/week)](https://pepy.tech/project/m5py) [![GitHub stars](https://img.shields.io/github/stars/smarie/python-m5py.svg)](https://github.com/smarie/python-m5py/stargazers)
+[![Documentation](https://img.shields.io/badge/doc-latest-blue.svg)](https://smarie.github.io/python-m5p/) [![PyPI](https://img.shields.io/pypi/v/m5py.svg)](https://pypi.python.org/pypi/m5py/) [![Downloads](https://pepy.tech/badge/m5py)](https://pepy.tech/project/m5py) [![Downloads per week](https://pepy.tech/badge/m5py/week)](https://pepy.tech/project/m5py) [![GitHub stars](https://img.shields.io/github/stars/smarie/python-m5p.svg)](https://github.com/smarie/python-m5p/stargazers)
 
-**This is the readme for developers.** The documentation for users is available here: [https://smarie.github.io/python-m5py/](https://smarie.github.io/python-m5py/)
+**This is the readme for developers.** The documentation for users is available here: [https://smarie.github.io/python-m5p/](https://smarie.github.io/python-m5p/)
 
 ## Want to contribute ?
 
 Contributions are welcome ! Simply fork this project on github, commit your contributions, and create pull requests.
 
-Here is a non-exhaustive list of interesting open topics: [https://github.com/smarie/python-m5py/issues](https://github.com/smarie/python-m5py/issues)
+Here is a non-exhaustive list of interesting open topics: [https://github.com/smarie/python-m5p/issues](https://github.com/smarie/python-m5p/issues)
 
 ## `nox` setup
 
@@ -78,11 +78,11 @@ While this is running, you can edit the files under `./docs/` and browse the aut
 
 Once you are done, simply hit `<CTRL+C>` to stop the session.
 
-Publishing the documentation (including tests and coverage reports) is done automatically by [the continuous integration engine](https://github.com/smarie/python-m5py/actions), using the `nox -s publish` session, this is not needed for local development.
+Publishing the documentation (including tests and coverage reports) is done automatically by [the continuous integration engine](https://github.com/smarie/python-m5p/actions), using the `nox -s publish` session, this is not needed for local development.
 
 ## Packaging
 
-This project uses `setuptools_scm` to synchronise the version number. Therefore the following command should be used for development snapshots as well as official releases: `python setup.py sdist bdist_wheel`. However this is not generally needed since [the continuous integration engine](https://github.com/smarie/python-m5py/actions) does it automatically for us on git tags. For reference, this is done in the `nox -s release` session.
+This project uses `setuptools_scm` to synchronise the version number. Therefore the following command should be used for development snapshots as well as official releases: `python setup.py sdist bdist_wheel`. However this is not generally needed since [the continuous integration engine](https://github.com/smarie/python-m5p/actions) does it automatically for us on git tags. For reference, this is done in the `nox -s release` session.
 
 ### Merging pull requests with edits - memo
 
@@ -90,13 +90,13 @@ Ax explained in github ('get commandline instructions'):
 
 ```bash
 git checkout -b <git_name>-<feature_branch> main
-git pull https://github.com/<git_name>/python-m5py.git <feature_branch> --no-commit --ff-only
+git pull https://github.com/<git_name>/python-m5p.git <feature_branch> --no-commit --ff-only
 ```
 
 if the second step does not work, do a normal auto-merge (do not use **rebase**!):
 
 ```bash
-git pull https://github.com/<git_name>/python-m5py.git <feature_branch> --no-commit
+git pull https://github.com/<git_name>/python-m5p.git <feature_branch> --no-commit
 ```
 
 Finally review the changes, possibly perform some modifications, and commit.

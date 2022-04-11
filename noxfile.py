@@ -14,7 +14,7 @@ from nox_utils import PY37, PY36, PY35, PY38, PY39, PY310, power_session, rm_fol
 
 pkg_name = "m5py"
 gh_org = "smarie"
-gh_repo = "python-m5py"
+gh_repo = "python-m5p"
 
 ENVS = {
     # python 3.10 is not available on conda yet

@@ -25,7 +25,7 @@ pkg_resources.require("setuptools_scm")
 # (2) Generate download url using git version
 from setuptools_scm import get_version  # noqa: E402
 
-URL = "https://github.com/smarie/python-m5py"
+URL = "https://github.com/smarie/python-m5p"
 DOWNLOAD_URL = URL + "/tarball/" + get_version()
 
 

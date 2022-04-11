@@ -2,9 +2,9 @@
 
 *`scikit-learn`-compliant M5 and Model trees for python*
 
-[![Python versions](https://img.shields.io/pypi/pyversions/m5py.svg)](https://pypi.python.org/pypi/m5py/) [![Build Status](https://github.com/smarie/python-m5py/actions/workflows/base.yml/badge.svg)](https://github.com/smarie/python-m5py/actions/workflows/base.yml) [![Tests Status](./reports/junit/junit-badge.svg?dummy=8484744)](./reports/junit/report.html) [![Coverage Status](./reports/coverage/coverage-badge.svg?dummy=8484744)](./reports/coverage/index.html) [![codecov](https://codecov.io/gh/smarie/python-m5py/branch/main/graph/badge.svg)](https://codecov.io/gh/smarie/python-m5py) [![Flake8 Status](./reports/flake8/flake8-badge.svg?dummy=8484744)](./reports/flake8/index.html)
+[![Python versions](https://img.shields.io/pypi/pyversions/m5py.svg)](https://pypi.python.org/pypi/m5py/) [![Build Status](https://github.com/smarie/python-m5p/actions/workflows/base.yml/badge.svg)](https://github.com/smarie/python-m5p/actions/workflows/base.yml) [![Tests Status](./reports/junit/junit-badge.svg?dummy=8484744)](./reports/junit/report.html) [![Coverage Status](./reports/coverage/coverage-badge.svg?dummy=8484744)](./reports/coverage/index.html) [![codecov](https://codecov.io/gh/smarie/python-m5p/branch/main/graph/badge.svg)](https://codecov.io/gh/smarie/python-m5p) [![Flake8 Status](./reports/flake8/flake8-badge.svg?dummy=8484744)](./reports/flake8/index.html)
 
-[![Documentation](https://img.shields.io/badge/doc-latest-blue.svg)](https://smarie.github.io/python-m5py/) [![PyPI](https://img.shields.io/pypi/v/m5py.svg)](https://pypi.python.org/pypi/m5py/) [![Downloads](https://pepy.tech/badge/m5py)](https://pepy.tech/project/m5py) [![Downloads per week](https://pepy.tech/badge/m5py/week)](https://pepy.tech/project/m5py) [![GitHub stars](https://img.shields.io/github/stars/smarie/python-m5py.svg)](https://github.com/smarie/python-m5py/stargazers)
+[![Documentation](https://img.shields.io/badge/doc-latest-blue.svg)](https://smarie.github.io/python-m5p/) [![PyPI](https://img.shields.io/pypi/v/m5py.svg)](https://pypi.python.org/pypi/m5py/) [![Downloads](https://pepy.tech/badge/m5py)](https://pepy.tech/project/m5py) [![Downloads per week](https://pepy.tech/badge/m5py/week)](https://pepy.tech/project/m5py) [![GitHub stars](https://img.shields.io/github/stars/smarie/python-m5p.svg)](https://github.com/smarie/python-m5p/stargazers)
 
 In 1996 R. Quinlan introduced the M5 algorithm, a regression tree algorithm similar to CART (Breiman), with additional pruning so that leaves may contain linear models instead of constant values. The idea was to get smoother and simpler models.
 
@@ -37,4 +37,4 @@ See the [usage examples gallery](./generated/gallery).
 
 ## Want to contribute ?
 
-Details on the github page: [https://github.com/smarie/python-m5py](https://github.com/smarie/python-m5py)
+Details on the github page: [https://github.com/smarie/python-m5p](https://github.com/smarie/python-m5p)
