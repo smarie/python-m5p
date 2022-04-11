@@ -1,9 +1,10 @@
 #  Authors: Sylvain MARIE <sylvain.marie@se.com>
-#            + All contributors to <https://github.com/smarie/python-m5py>
+#            + All contributors to <https://github.com/smarie/python-m5p>
 #
-#  License: 3-clause BSD, <https://github.com/smarie/python-m5py/blob/main/LICENSE>
+#  License: 3-clause BSD, <https://github.com/smarie/python-m5p/blob/main/LICENSE>
 
-from m5py.main import dummy
+from m5py.main import M5Prime
+from m5py.export import export_text_m5
 
 try:
     # -- Distribution mode --
@@ -17,9 +18,11 @@ except ImportError:
     __version__ = _gv(_path.join(_path.dirname(__file__), _path.pardir))
 
 __all__ = [
-    '__version__',
+    "__version__",
     # submodules
-    'main',
+    "main",
+    "export",
     # symbols
-    'dummy',
+    "M5Prime",
+    "export_text_m5"
 ]
