@@ -20,12 +20,12 @@ ENVS = {
     # python 3.10 is not available on conda yet
     # PY310: {"coverage": False, "pkg_specs": {"pip": ">19"}},
     PY39: {"coverage": False, "pkg_specs": {"pip": ">19"}},
-    PY38: {"coverage": False, "pkg_specs": {"pip": ">19"}},
     # PY27: {"coverage": False, "pkg_specs": {"pip": ">10"}},
     PY35: {"coverage": False, "pkg_specs": {"pip": ">10"}},
     PY36: {"coverage": False, "pkg_specs": {"pip": ">19"}},
     # IMPORTANT: this should be last so that the folder docs/reports is not deleted afterwards
-    PY37: {"coverage": True, "pkg_specs": {"pip": ">19"}},  # , "pytest-html": "1.9.0"
+    PY37: {"coverage": False, "pkg_specs": {"pip": ">19"}},  # , "pytest-html": "1.9.0"
+    PY38: {"coverage": True, "pkg_specs": {"pip": ">19"}},
 }
 
 
