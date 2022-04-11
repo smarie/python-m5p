@@ -1,0 +1,27 @@
+site_name: m5py
+# site_description: 'A short description of my project'
+repo_url: https://github.com/smarie/python-m5py
+# docs_dir: .
+# site_dir: ../site
+# default branch is main instead of master now on github
+edit_uri : ./edit/main/docs
+nav:
+    - Home: index.md
+    - Usage examples: generated/gallery
+    # - API reference: api_reference.md
+    - Changelog: changelog.md
+
+theme: material  # readthedocs  mkdocs
+
+plugins:
+  - gallery:
+      examples_dirs: docs/examples          # path to your example scripts
+      gallery_dirs: docs/generated/gallery  # where to save generated gallery
+      filename_pattern: ".*_demo"
+      within_subsection_order: FileNameSortKey  # order according to file name
+
+  - search  # make sure the search plugin is still enabled
+
+markdown_extensions:
+  - toc:
+      permalink: true
