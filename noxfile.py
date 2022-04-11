@@ -147,7 +147,8 @@ def flake8(session: PowerSession):
     """Launch flake8 qualimetry."""
 
     session.install("-r", str(Folders.ci_tools / "flake8-requirements.txt"))
-    session.run2("pip install .")
+    session.install_reqs(phase="flake8", phase_reqs=["numpy", "pandas", "scikit-learn", "matplotlib"])
+    session.run2("pip install . --no-deps")
 
     rm_folder(Folders.flake8_reports)
     Folders.flake8_reports.mkdir(parents=True, exist_ok=True)
@@ -168,8 +169,11 @@ def docs(session: PowerSession):
     """Generates the doc and serves it on a local http server. Pass '-- build' to build statically instead."""
 
     # we need to install self for the doc gallery examples to work
-    session.run2("pip install .")
-    session.install_reqs(phase="docs", phase_reqs=["mkdocs-material", "mkdocs", "pymdown-extensions", "pygments", "mkdocs-gallery", "pillow"])
+    session.install_reqs(phase="docs", phase_reqs=["numpy", "pandas", "scikit-learn", "matplotlib"])
+    session.run2("pip install . --no-deps")
+    session.install_reqs(phase="docs", phase_reqs=[
+        "mkdocs-material", "mkdocs", "pymdown-extensions", "pygments", "mkdocs-gallery", "pillow", "matplotlib",
+    ])
 
     if session.posargs:
         # use posargs instead of "serve"
@@ -183,8 +187,11 @@ def publish(session: PowerSession):
     """Deploy the docs+reports on github pages. Note: this rebuilds the docs"""
 
     # we need to install self for the doc gallery examples to work
-    session.run2("pip install .")
-    session.install_reqs(phase="mkdocs", phase_reqs=["mkdocs-material", "mkdocs", "pymdown-extensions", "pygments", "mkdocs-gallery", "pillow"])
+    session.install_reqs(phase="publish", phase_reqs=["numpy", "pandas", "scikit-learn", "matplotlib"])
+    session.run2("pip install . --no-deps")
+    session.install_reqs(phase="publish", phase_reqs=[
+        "mkdocs-material", "mkdocs", "pymdown-extensions", "pygments", "mkdocs-gallery", "pillow"
+    ])
 
     # possibly rebuild the docs in a static way (mkdocs serve does not build locally)
     session.run2("mkdocs build")
