@@ -147,7 +147,7 @@ def flake8(session: PowerSession):
     """Launch flake8 qualimetry."""
 
     session.install("-r", str(Folders.ci_tools / "flake8-requirements.txt"))
-    session.install_reqs(phase="flake8", phase_reqs=["numpy", "pandas", "scikit-learn", "matplotlib"])
+    session.install_reqs(phase="flake8", phase_reqs=["numpy", "pandas", "scikit-learn"])
     session.run2("pip install . --no-deps")
 
     rm_folder(Folders.flake8_reports)
@@ -169,7 +169,7 @@ def docs(session: PowerSession):
     """Generates the doc and serves it on a local http server. Pass '-- build' to build statically instead."""
 
     # we need to install self for the doc gallery examples to work
-    session.install_reqs(phase="docs", phase_reqs=["numpy", "pandas", "scikit-learn", "matplotlib"])
+    session.install_reqs(phase="docs", phase_reqs=["numpy", "pandas", "scikit-learn", "matplotlib", "seaborn"])
     session.run2("pip install . --no-deps")
     session.install_reqs(phase="docs", phase_reqs=[
         "mkdocs-material", "mkdocs", "pymdown-extensions", "pygments", "mkdocs-gallery", "pillow", "matplotlib",
@@ -187,7 +187,7 @@ def publish(session: PowerSession):
     """Deploy the docs+reports on github pages. Note: this rebuilds the docs"""
 
     # we need to install self for the doc gallery examples to work
-    session.install_reqs(phase="publish", phase_reqs=["numpy", "pandas", "scikit-learn", "matplotlib"])
+    session.install_reqs(phase="publish", phase_reqs=["numpy", "pandas", "scikit-learn", "matplotlib", "seaborn"])
     session.run2("pip install . --no-deps")
     session.install_reqs(phase="publish", phase_reqs=[
         "mkdocs-material", "mkdocs", "pymdown-extensions", "pygments", "mkdocs-gallery", "pillow"
