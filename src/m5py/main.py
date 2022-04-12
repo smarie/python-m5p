@@ -1083,8 +1083,8 @@ class LinRegNodeModel(DeNormalizableMixIn):
         self.features = [new_features_lookup_dct[f] for f in self.features]
 
     def denormalize(self,
-                    x_scaler: StandardScaler=None,
-                    y_scaler: StandardScaler=None
+                    x_scaler: StandardScaler = None,
+                    y_scaler: StandardScaler = None
                     ):
         """
         De-normalizes the linear model.
