@@ -4,7 +4,7 @@
 
 [![Documentation](https://img.shields.io/badge/doc-latest-blue.svg)](https://smarie.github.io/python-m5p/) [![PyPI](https://img.shields.io/pypi/v/m5py.svg)](https://pypi.python.org/pypi/m5py/) [![Downloads](https://pepy.tech/badge/m5py)](https://pepy.tech/project/m5py) [![Downloads per week](https://pepy.tech/badge/m5py/week)](https://pepy.tech/project/m5py) [![GitHub stars](https://img.shields.io/github/stars/smarie/python-m5p.svg)](https://github.com/smarie/python-m5p/stargazers)
 
-*`scikit-learn`-compliant M5 and Model trees for python*
+*`scikit-learn`-compliant M5 / M5' model trees for python*
 
 The documentation for users is available here: [https://smarie.github.io/python-m5p/](https://smarie.github.io/python-m5p/)
 
