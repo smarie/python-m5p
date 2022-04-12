@@ -30,6 +30,9 @@ See the [usage examples gallery](./generated/gallery).
 ## See Also
 
  * Weka's [M5P model](https://weka.sourceforge.io/doc.dev/weka/classifiers/trees/M5P.html)
+ * LightGBM's [linear_tree](https://lightgbm.readthedocs.io/en/latest/Parameters.html#linear_tree)
+ * [linear-tree](https://github.com/cerlymarco/linear-tree) that has a similar procedure than lightgbm's (from
+   [discussion](https://github.com/scikit-learn/scikit-learn/issues/13106#issuecomment-808730062))
 
 ### Others
 
