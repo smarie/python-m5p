@@ -1,10 +1,10 @@
 from numbers import Integral
 
 import numpy as np
-import six
+from io import StringIO
 
-from sklearn.tree._criterion import FriedmanMSE
 from sklearn.tree import _tree
+from sklearn.tree._criterion import FriedmanMSE
 
 from m5py.main import is_leaf, ConstantLeafModel, M5Base, check_is_fitted
 
@@ -275,7 +275,7 @@ def export_text_m5(decision_tree, out_file=None, max_depth=None,
 
         if out_file is None:
             return_string = True
-            out_file = six.StringIO()
+            out_file = StringIO()
 
         if isinstance(precision, Integral):
             if precision < 0:

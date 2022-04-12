@@ -6,6 +6,7 @@ from warnings import warn
 import numpy as np
 
 from scipy.sparse import issparse
+
 from sklearn import clone
 from sklearn.base import RegressorMixin, is_classifier
 from sklearn.linear_model import LinearRegression
@@ -17,9 +18,11 @@ from sklearn.tree._tree import DOUBLE
 from sklearn.utils import check_array
 from sklearn.utils.validation import check_is_fitted
 
+from m5py.linreg_utils import linreg_model_to_text, DeNormalizableMixIn, DeNormalizableLinearRegression
+
+
 __all__ = ["M5Base", "M5Prime"]
 
-from m5py.linreg_utils import linreg_model_to_text, DeNormalizableMixIn, DeNormalizableLinearRegression
 
 _SmoothingDetails = namedtuple("_SmoothingDetails", ("A", "B", "C"))
 # Internal structure to contain the recursive smoothed coefficients details in the smoothing algorithm
