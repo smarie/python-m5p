@@ -25,7 +25,7 @@ See the [usage examples gallery](./generated/gallery).
 
 ## Main features / benefits
 
- * The classic `M5` algorithm in python, compliant with `scikit-learn`
+ * The classic `M5` algorithm in python, compliant with `scikit-learn`.
 
 ## See Also
 
