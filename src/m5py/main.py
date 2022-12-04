@@ -211,7 +211,7 @@ class M5Base(BaseDecisionTree):
             raise ValueError("use_smoothing: Unexpected value: %s, please report it as issue." % self.use_smoothing)
 
         # (1) Build the initial tree as usual
-        super(M5Base, self).fit(X, y, sample_weight=sample_weight, check_input=check_input, X_idx_sorted=X_idx_sorted)
+        super(M5Base, self).fit(X, y, sample_weight=sample_weight, check_input=check_input)
 
         if self.debug_prints:
             logger.debug("(debug_prints) Initial tree:")
