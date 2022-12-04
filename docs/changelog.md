@@ -1,5 +1,10 @@
 # Changelog
 
+### 0.3.1 - Fixed compliance with sklearn 1.1.0
+
+ * Fixed `TypeError: fit() got an unexpected keyword argument 'X_idx_sorted'`. 
+   PR [#11](https://github.com/smarie/python-m5p/pull/11) by [preinaj](https://github.com/preinaj)
+
 ### 0.3.0 - First public version
 
  * Initial fork from private repository + [scikit-learn/scikit-learn#13732](https://github.com/scikit-learn/scikit-learn/pull/13732). Fixes [#2](https://github.com/smarie/python-m5p/issues/1)
