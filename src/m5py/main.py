@@ -433,7 +433,7 @@ class M5Base(BaseDecisionTree):
 
         # Select the Error metric to compute model errors (used to compare
         # node with subtree for pruning)
-        # TODO in Weka they use RMSE, but in papers they use MAE. this could be a parameter.
+        # TODO in Weka they use RMSE, but in papers they use MAE. this should be a parameter.
         # TODO Shall we go further and store the residuals, or a bunch of metrics? not sure
         err_metric = root_mean_squared_error  # mean_absolute_error
 
@@ -1309,7 +1309,7 @@ def build_models_and_get_pruning_info(
         err_children = err_metric(y_true_this_node, y_pred_children)
 
         # TODO the Weka implem (below) differs from the paper that suggests a
-        #  weigthed sum of adjusted errors. Why?
+        #  weigthed sum of adjusted errors. This is maybe an equivalent formulation, to check.
         # the total number of parameters if we do not prune, is the sum of
         # params in each branch PLUS 1 for the split
         n_params_splitmodel = node_models[left_node].n_params + node_models[right_node].n_params + 1
