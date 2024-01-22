@@ -17,7 +17,7 @@ from sklearn.tree._classes import DTYPE
 from sklearn.tree._tree import DOUBLE
 from sklearn.utils import check_array
 from sklearn.utils.validation import check_is_fitted
-import sklearn.__version__
+from sklearn import __version__ as sklearn_version
 
 from m5py.linreg_utils import linreg_model_to_text, DeNormalizableMixIn, DeNormalizableLinearRegression
 
