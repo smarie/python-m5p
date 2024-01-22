@@ -4,7 +4,7 @@
 
 [![Python versions](https://img.shields.io/pypi/pyversions/m5py.svg)](https://pypi.python.org/pypi/m5py/) [![Build Status](https://github.com/smarie/python-m5p/actions/workflows/base.yml/badge.svg)](https://github.com/smarie/python-m5p/actions/workflows/base.yml) [![Tests Status](./reports/junit/junit-badge.svg?dummy=8484744)](./reports/junit/report.html) [![Coverage Status](./reports/coverage/coverage-badge.svg?dummy=8484744)](./reports/coverage/index.html) [![codecov](https://codecov.io/gh/smarie/python-m5p/branch/main/graph/badge.svg)](https://codecov.io/gh/smarie/python-m5p) [![Flake8 Status](./reports/flake8/flake8-badge.svg?dummy=8484744)](./reports/flake8/index.html)
 
-[![Documentation](https://img.shields.io/badge/doc-latest-blue.svg)](https://smarie.github.io/python-m5p/) [![PyPI](https://img.shields.io/pypi/v/m5py.svg)](https://pypi.python.org/pypi/m5py/) [![Downloads](https://pepy.tech/badge/m5py)](https://pepy.tech/project/m5py) [![Downloads per week](https://pepy.tech/badge/m5py/week)](https://pepy.tech/project/m5py) [![GitHub stars](https://img.shields.io/github/stars/smarie/python-m5p.svg)](https://github.com/smarie/python-m5p/stargazers)
+[![Documentation](https://img.shields.io/badge/doc-latest-blue.svg)](https://smarie.github.io/python-m5p/) [![PyPI](https://img.shields.io/pypi/v/m5py.svg)](https://pypi.python.org/pypi/m5py/) [![Downloads](https://pepy.tech/badge/m5py)](https://pepy.tech/project/m5py) [![Downloads per week](https://pepy.tech/badge/m5py/week)](https://pepy.tech/project/m5py) [![GitHub stars](https://img.shields.io/github/stars/smarie/python-m5p.svg)](https://github.com/smarie/python-m5p/stargazers)[![DOI](https://zenodo.org/badge/411580595.svg)](https://zenodo.org/doi/10.5281/zenodo.10552218)
 
 In 1996 R. Quinlan introduced the M5 algorithm, a regression tree algorithm similar to CART (Breiman), with additional pruning so that leaves may contain linear models instead of constant values. The idea was to get smoother and simpler models.
 
@@ -12,6 +12,13 @@ The algorithm was later enhanced by Wang & Witten under the name M5 Prime (aka M
 
 `m5py` is a python implementation leveraging `scikit-learn`'s regression tree engine.
 
+
+## Citing
+
+If `m5py` helps you with your research work, don't hesitate to spread the word ! For this 
+please cite this [conference presentation](https://hal.science/hal-03762155/).
+Optionally in addition you can also cite this Zenodo entry
+[![DOI](https://zenodo.org/badge/411580595.svg)](https://zenodo.org/doi/10.5281/zenodo.10552218). Thanks!
 
 ## Installing
 
