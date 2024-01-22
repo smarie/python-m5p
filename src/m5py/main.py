@@ -23,7 +23,7 @@ from m5py.linreg_utils import linreg_model_to_text, DeNormalizableMixIn, DeNorma
 
 from packaging.version import Version
 
-SKLEARN_VERSION = Version(sklearn.__version__)
+SKLEARN_VERSION = Version(sklearn_version)
 SKLEARN13_OR_GREATER = SKLEARN_VERSION >= Version("1.3.0")
 
 
