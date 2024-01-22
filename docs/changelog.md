@@ -1,5 +1,10 @@
 # Changelog
 
+### 0.3.2 - Fixed compliance with sklearn 1.3.0
+
+ * Fixed `AttributeError: 'super' object has no attribute 'fit' `. 
+   PR [#16](https://github.com/smarie/python-m5p/pull/16) by [lccatala](https://github.com/lccatala)
+
 ### 0.3.1 - Fixed compliance with sklearn 1.1.0
 
  * Fixed `TypeError: fit() got an unexpected keyword argument 'X_idx_sorted'`. 
