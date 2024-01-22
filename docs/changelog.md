@@ -1,5 +1,9 @@
 # Changelog
 
+### 0.3.3 - Added zenodo
+
+ * Added zenodo entry
+
 ### 0.3.2 - Fixed compliance with sklearn 1.3.0
 
  * Fixed `AttributeError: 'super' object has no attribute 'fit' `. 
