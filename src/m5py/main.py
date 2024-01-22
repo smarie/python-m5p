@@ -17,8 +17,14 @@ from sklearn.tree._classes import DTYPE
 from sklearn.tree._tree import DOUBLE
 from sklearn.utils import check_array
 from sklearn.utils.validation import check_is_fitted
+from sklearn import __version__ as sklearn_version
 
 from m5py.linreg_utils import linreg_model_to_text, DeNormalizableMixIn, DeNormalizableLinearRegression
+
+from packaging.version import Version
+
+SKLEARN_VERSION = Version(sklearn_version)
+SKLEARN13_OR_GREATER = SKLEARN_VERSION >= Version("1.3.0")
 
 
 __all__ = ["M5Base", "M5Prime"]
@@ -210,8 +216,15 @@ class M5Base(BaseDecisionTree):
         if self.use_smoothing not in [False, np.bool_(False), "installed", "on_prediction"]:
             raise ValueError("use_smoothing: Unexpected value: %s, please report it as issue." % self.use_smoothing)
 
+
         # (1) Build the initial tree as usual
-        super(M5Base, self).fit(X, y, sample_weight=sample_weight, check_input=check_input)
+
+        # Get the correct fit method name based on the sklearn version used
+        fit_method_name = "_fit" if SKLEARN13_OR_GREATER else "fit"
+
+        fit_method = getattr(super(M5Base, self), fit_method_name)
+        fit_method(X, y, sample_weight=sample_weight, check_input=check_input)
+
 
         if self.debug_prints:
             logger.debug("(debug_prints) Initial tree:")
