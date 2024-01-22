@@ -1,0 +1,32 @@
+{
+  "title": "m5py",
+  "description": "<p>An implementation of M5 (Prime) and model trees for scikit-learn.</p>",
+  "language": "eng",
+  "license": {
+    "id": "bsd-license"
+  },
+  "keywords": [
+    "python",
+    "model",
+    "tree",
+    "regression",
+    "M5",
+    "prime",
+    "scikit-learn",
+    "machine learning"
+  ],
+  "creators": [
+    {
+      "orcid": "0000-0002-5929-1047",
+      "affiliation": "Schneider Electric",
+      "name": "Sylvain Mari\u00e9"
+    },
+    {
+      "affiliation": "Criteo",
+      "name": "Thibaud Rahier"
+    },
+    {
+      "name": "Various github contributors"
+    }
+  ]
+}
