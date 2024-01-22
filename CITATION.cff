@@ -1,0 +1,48 @@
+# This CITATION.cff file was generated with cffinit.
+# Visit https://bit.ly/cffinit to generate yours today!
+
+cff-version: 1.2.0
+title: m5py
+message: 'If you use this software, please cite it as below.'
+type: software
+authors:
+  - family-names: Marié
+    given-names: Sylvain
+    orcid: 'https://orcid.org/0000-0002-5929-1047'
+identifiers:
+  - type: doi
+    value: 10.5281/zenodo.10552219
+    description: Software (Zenodo)
+repository-code: 'https://github.com/smarie/python-m5p'
+url: 'https://smarie.github.io/python-m5p/'
+repository-artifact: 'https://pypi.org/project/m5py/'
+abstract: >-
+  An implementation of M5 (Prime) and model trees for
+  scikit-learn.
+keywords:
+  - python
+  - model
+  - tree
+  - regression
+  - M5
+  - prime
+  - scikit-learn
+  - machine learning
+license: BSD-3-Clause
+doi: 10.5281/zenodo.10552219
+preferred-citation:
+  type: conference
+  url: 'https://hal.science/hal-03762155/'
+  authors:
+    - family-names: Marié
+      given-names: Sylvain
+      orcid: 'https://orcid.org/0000-0002-5929-1047'
+  title: >-
+    `python-m5p` - M5 Prime regression trees in python, compliant with
+    scikit-learn
+  conference:
+    name: "PyCon.DE & PyData"
+    city: "Berlin"
+    country: "Germany"
+    date-end: "2022-04-13"
+    date-start: "2022-04-11"
